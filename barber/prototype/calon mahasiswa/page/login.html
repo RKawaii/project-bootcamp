@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JQUERY -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <!-- SCRIPT -->
+    <script tupe="text/javascript" src="../js/script.js"></script>
+
+    <title>Login</title>
+</head>
+
+<body id="home" class="green accent-4">
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col m6 s12 offset-m3">
+                <!-- CARD -->
+                <div class="card">
+                    <div class="card-content">
+                        <!-- TABS -->
+                        <div class="row">
+                            <div class="col s12">
+                                <ul class="tabs">
+                                    <li class="tab col m6 s6"><a class="active" href="#login">Login</a></li>
+                                    <li class="tab col m6 s6"><a href="#daftar">Daftar</a></li>
+                                </ul>
+                            </div>
+                            <!-- END TABS -->
+
+                            <!-- LOGIN -->
+                            <div id="login" class="col s12">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="input-field col m8 offset-m2 s12">
+                                            <input type="text" name="kode" id="kode" class="validate" required>
+                                            <label for="kode">NIS: </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col m8 offset-m2 s12">
+                                            <input type="password" name="password" id="password" class="validate"
+                                                required>
+                                            <label for="password">Password: </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m8 offset-m2 s12">
+                                            <a href="lupa.html">Lupa Password ?</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m8 offset-m2 s12">
+                                            <button class="btn waves-effect waves-light green" type="submit"
+                                                name="action">Login</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- END LOGIN -->
+
+                            <!-- DAFTAR -->
+                            <div id="daftar" class="col s12">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="input-field col m8 offset-m2 s12">
+                                            <input type="text" name="kode" id="kode" class="validate" required>
+                                            <label for="kode">NIS: </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col m8 offset-m2 s12">
+                                            <input type="password" name="password" id="password" class="validate"
+                                                required>
+                                            <label for="password">Password: </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col m8 offset-m2 s12">
+                                            <input type="password" name="konfirm" id="konfirm" class="validate"
+                                                required>
+                                            <label for="konfirm">Konfirmasi Password: </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m8 offset-m2 s12">
+                                            <a href="lupa.html">Lupa Password ?</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col m8 offset-m2 s12">
+                                            <button class="btn waves-effect waves-light green" type="submit"
+                                                name="action">Daftar</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- END DAFTAR -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END CARD -->
+            </div>
+        </div>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+/* BODY */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* SLIDER */
+.slider h3,
+.slider h5,
+.clients h3 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* IMAGES */
+
+
+/* UTILITIES */
+main {
+    flex: 1 0 auto;
+}
+
+section {
+    margin-top: 30px;
+    padding: 20px 0;
+}

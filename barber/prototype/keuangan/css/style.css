@@ -1,0 +1,25 @@
+/* BODY */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* CARD */
+.card-panel {
+    height: 200px;
+}
+
+/* IMAGE */
+.modal img {
+    margin-bottom: 20px;
+}
+
+/* UTILITIES */
+main {
+    flex: 1 0 auto;
+}
+
+section {
+    padding: 20px 0;
+}

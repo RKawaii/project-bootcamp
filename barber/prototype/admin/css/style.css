@@ -1,0 +1,20 @@
+/* BODY */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* CARD */
+.card-panel {
+    height: 250px;
+}
+
+/* UTILITIES */
+main {
+    flex: 1 0 auto;
+}
+
+section {
+    padding: 20px 0;
+}

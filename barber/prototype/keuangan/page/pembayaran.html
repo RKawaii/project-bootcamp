@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- JQUERY -->
+    <script src="../js/jquery-3.3.1.min.js"></script>
+
+    <!-- SCRIPT -->
+    <script tupe="text/javascript" src="../js/script.js"></script>
+
+    <title>Pendaftaran</title>
+</head>
+
+<body id="home">
+
+    <!-- FLOATING BUTTON LOGOUT -->
+    <div class="fixed-action-btn">
+        <a href="login.html" class="btn-floating btn-large red waves-effect waves-light">
+            <i class="large material-icons">power_settings_new</i>
+        </a>
+    </div>
+    <!-- END FLOATING BUTTON LOGOUT -->
+
+    <main>
+
+        <!-- NAVBAR -->
+        <div class="navbar-fixed">
+            <nav class="blue darken-2">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="../index.html" class="brand-logo">Beranda</a>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i
+                                class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li class="active"><a href="pembayaran.html">Pembayaran</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- END NAVBAR -->
+
+        <!-- SIDE NAVBAR -->
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="pembayaran.html">Pembayaran</a></li>
+        </ul>
+        <!-- END SIDE NAVBAR -->
+
+        <!-- DATA PEMBAYARAN -->
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+
+                    <!-- PENCARIAN -->
+                    <section class="search" id="search">
+                        <div class="row">
+                            <h3 class="center light grey-text text-darken-3">DATA PEMBAYARAN CALON MAHASISWA</h3>
+                            <div class="col m12 light">
+                                <h5>Pencarian:</h5>
+                                <form>
+                                    <div class="row">
+                                        <div class="input-field col m5 s12">
+                                            <i class="material-icons prefix">search</i>
+                                            <input id="icon_prefix" type="text" class="validate">
+                                            <label for="icon_prefix">Kata Kunci</label>
+                                            <span class="helper-text" data-error="wrong" data-success="right">Kata
+                                                Kunci:
+                                                Nomor Pendaftaran, NIS, Nama Lengkap</span>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <button class="btn waves-effect waves-light" type="submit"
+                                                name="action">Cari</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- END PENCARIAN -->
+
+                    <!-- TABEL -->
+                    <div class="row">
+                        <div class="col m12 s12">
+                            <table class="highlight responsive-table">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Nomor Pendaftaran</th>
+                                        <th>NIS</th>
+                                        <th>Nama Lengkap</th>
+                                        <th>Aksi</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>10023</td>
+                                        <td>1001456789</td>
+                                        <td>Mathias</td>
+                                        <td>
+                                            <a class="waves-effect waves-light btn blue lighten-1 modal-trigger"
+                                                href="#modalDiri"><i class="material-icons left">info</i>Detail</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- END TABEL -->
+
+                    <!-- MODAL -->
+                    <div id="modalDiri" class="modal">
+                        <div class="modal-content center-align">
+                            <h4>Informasi Pembayaran Calon Mahasiswa</h4>
+                            <img src="../img/pp.jpg" alt="Gambar Mahasiswa" width="200" class="circle responsive-img">
+                            <div class="divider"></div>
+                            <p class="left-align">Nama Lengkap: Mathias Yeremia Aryadi</p>
+                            <p class="left-align">Nomor Pendaftaran: 10023</p>
+                            <p class="left-align">NIS: 1001456789</p>
+                            <p class="left-align">Email: mathias@gmail.com</p>
+                            <p class="left-align">Nomor Telepon: 08999000697</p>
+                            <div class="divider"></div>
+                            <p class="left-align">Program Studi: S1 Informatika</p>
+                            <p class="left-align">Kelas: Pagi</p>
+                            <p class="left-align">Jumlah SKS: 24</p>
+                            <div class="divider"></div>
+                            <h5 class="left-align">Tabel Pembayaran</h5>
+                            <table class="highlight responsive-table">
+                                <thead>
+                                    <tr>
+                                        <th>Keterangan</th>
+                                        <th>Biaya</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Biaya Formulir</td>
+                                        <td>Rp 250.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Biaya SKS</td>
+                                        <td>Rp 5000.000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Biaya BP3</td>
+                                        <td>Rp 5000.000</td>
+                                    </tr>
+                                    <tr>
+                                     
+                                        <th>Total</th>
+                                        <th>Rp 10.250.000</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="left-align">Status Pembayaran: <span class="red-text">Belum Bayar</span></p>
+                            <p class="left-align">Tanggal Pendaftaran: 01 April 2019</p>
+                            <p class="left-align">Tanggal Akhir Pembayaran: 20 April 2019</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="waves-effect waves-light btn yellow darken-2" href="form/validasi.html"><i
+                                    class="material-icons left">edit</i>Validasi</a>
+                            <a href="#!" class="modal-close waves-effect waves-light btn black"><i
+                                    class="material-icons left">close</i>Tutup</a>
+                        </div>
+                    </div>
+                    <!-- END MODAL -->
+                </div>
+
+            </div>
+        </div>
+        <!-- END DATA PEMBAYARAN -->
+
+        <!-- PAGINATION -->
+        <div class="container">
+            <div class="row">
+                <div class="col md12 s12">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="active"><a href="#!">1</a></li>
+                        <li class="waves-effect"><a href="#!">2</a></li>
+                        <li class="waves-effect"><a href="#!">3</a></li>
+                        <li class="waves-effect"><a href="#!">4</a></li>
+                        <li class="waves-effect"><a href="#!">5</a></li>
+                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END PAGINATION -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer blue darken-2 center">
+        <div class="container">
+            <p class="flow-text">Pochinki &copy; 2019 Copyright</p>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+
+</body>
+
+</html>
